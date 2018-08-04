@@ -1,0 +1,236 @@
+@font-face {
+	font-family: 'Braille';
+	src: url(http://tjb0607.me/i3_tumblr_theme/font/Braille.woff);
+}
+html {
+	background-color: #7C8491;
+	background-image: url(http://static.tumblr.com/bwey4ra/Gzwno4oq5/sunset.jpg);
+	background-position: bottom;
+	background-attachment: fixed;
+	height: 100%;
+	margin: 0px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	font-family: Inconsolata, monospace;
+	font-size: 11px;
+	color: #fff;
+}
+#tumblr_controls {
+    margin-top: 18px;
+}
+p, code {
+	line-height: 11px;
+	margin: 0px;
+}
+a, #sidebar .blogdescription a, .jslink {
+	color: #5FD7FF;
+	text-decoration: underline;
+	cursor: pointer;
+}
+ul {
+	padding-left: 11px;
+}
+#i3bar {
+	overflow: hidden;
+	color: #dedede;
+	position: fixed;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 18px;
+	background-color: #2d2d2d;
+}
+#i3bar p {
+	margin: 3px 8px;
+}
+#sidebar {
+	position: fixed;
+	top: 47px;
+	left: 35px;
+	bottom: 35px;
+	width: 450px;
+}
+.short-info .separator {
+	color: #808080;
+}
+.window {
+	overflow: auto;
+	position: relative;
+	margin: 10px;
+	border: 2px solid #2d2d2d;
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.75);
+}
+.window:hover, html:hover #active-window {
+	border-color: #D64937;
+}
+.window:hover .cursor, html:hover #active-window .cursor {
+	background-color: #fff;
+}
+.urxvt {
+	background-color: rgba(28, 28, 28, 0.9);
+	cursor: text;
+	padding: 2px;
+	max-width: 100%;
+	min-height: 100%;
+}
+#i3-gaps-tumblr a .blog-title {
+	cursor: pointer;
+}
+#i3-gaps-tumblr .blog-title p {
+	text-align: center;
+}
+#i3-gaps-tumblr .blog-title p.small, #i3-gaps-tumblr .blog-title a {
+	font-weight: 700;
+	background-color: #107bcc;
+	color: #fff;
+	text-decoration: none;
+}
+#content {
+	position: absolute;
+	top: 47px;
+	right: 35px;
+	left: 475px;
+	padding-bottom: 35px;
+}
+.post-header, .post-footer {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	background-color: #303030;
+}
+.left {
+	float: left;
+}
+.tags {
+	padding-right: 60px;
+}
+.right {
+	float: right;
+}
+.post-body {
+	padding: 1em;
+	max-width: 100%;
+}
+.post-body .title, .post-body .title a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+}
+.post-body .link {
+	font-size: 1.5em;
+}
+.post-body img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	max-height: 95vh;
+}
+.post-body figure {
+	margin: 0px;
+}
+.post-body p, .post-body blockquote {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.post-body blockquote {
+	margin-left: 4px;
+	border-left: 2px solid #5f5f5f;
+	padding-left: 6px;
+	margin-right: 0px;
+}
+.post-header, .post-header a, .post-footer, .post-footer a {
+	color: #808080;
+}
+.footer-left {
+	display: inline-block;
+}
+.post-footer {
+	min-height: 22px;
+}
+.buttons {
+	position: absolute;
+	width: 50px;
+	text-align: right;
+	display: inline-block;
+	right: 0px;
+	padding: 2px 4px 2px 0px;
+}
+.buttons .reblogbutton {
+	margin-bottom: -20px;
+}
+#i3bar .left .page-button {
+	padding: 3px 5px 2px 5px;
+	margin-bottom: 1px;
+	color: #808080;
+	float: left;
+}
+#i3bar .left .page-button-active {
+	color: #dedede;
+	background-color: #D64937;
+}
+#i3status {
+	padding: 3px 5px 2px 5px;
+}
+#i3status > span a, #sidebar a {
+	color: inherit;
+	text-decoration: none;
+}
+#i3status span.i3status-separator {
+	color: #808080;
+}
+#nav {
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+	margin-top: -10px;
+}
+#nav .prev-page-window {
+	float: left;
+}
+#nav .next-page-window {
+	float: right;
+}
+#nav .current-page-window {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#nav .prev-page-window .urxvt, #nav .next-page-window .urxvt {
+	cursor: pointer;
+}
+#nav a, #sidebar a, #sidebar .jslink {
+	text-decoration: inherit;
+	color: inherit;
+}
+#nav .prev-page-window .urxvt p, #nav .next-page-window .urxvt p {
+	text-decoration: none;
+	background-color: #107BCC;
+	padding: 0px 5px;
+}
+.mobile-info {
+	display: none;
+}
+#confirm {
+	display: none;
+}
+#confirm-window {
+	z-index: 2;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	width: 200px;
+	margin-left: -100px;
+	transform: translateY(-50%);
+	border-color: #fff;
+	text-align: center;
+}
+#confirm-bg {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
