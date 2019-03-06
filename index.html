@@ -27,17 +27,17 @@
 		}
 		function i3status() {
 			var d = new Date();
-			
+
 			dateString = d.getFullYear()+'-'
 					   + pad(d.getMonth()+1)+'-'
 					   + pad(d.getDate())+' '
 					   + pad(d.getHours())+':'
 					   + pad(d.getMinutes())+':'
 					   + pad(d.getSeconds());
-			
+
 			document.getElementById("i3status-date").innerHTML = dateString;
-			
-			setTimeout(i3status, 1000 - Date.now() % 1000); 
+
+			setTimeout(i3status, 1000 - Date.now() % 1000);
 		}
 		function cursorBlink() {
 			var arr = document.getElementById("active-window").getElementsByClassName("cursor");
@@ -83,7 +83,7 @@
 			}
 			c[i].style.height = c[i].parentNode.getBoundingClientRect().bottom - c[i].getBoundingClientRect().top - 14 + "px";
 		}
-		/* http://stackoverflow.com/questions/641857/javascript-window-resize-event */ 
+		/* http://stackoverflow.com/questions/641857/javascript-window-resize-event */
 		function addEvent(elem, type, eventHandle) {
 		    if (elem == null || typeof(elem) == 'undefined') return;
 		    if ( elem.addEventListener ) {
@@ -99,10 +99,10 @@
 <body id="i3-gaps-tumblr">
 	<div id="i3bar">
 		<div class="left">
-			
+
 		</div>
 		<div class="right">
-			
+
 		</div>
 	</div>
 	<div id="workspace">
@@ -136,15 +136,15 @@
 					</p>
 					<p class="blogdescription">&nbsp;</p>
 					<p class="blogdescription">
-						my name is cameron
+						my name is cameron and I am a graduate from uvic with a bsc in computer science
 					</p>
 					<p class="blogdescription">&nbsp;</p>
 					<p class="blogdescription">
-					    software / web developer
+					    I am a developer looking to begin a career in software/web development in victoria, bc
 					</p>
 					<p class="blogdescription">&nbsp;</p>
 					<p class="prompt">
-						<span style="background-color: #107bcc"><a href="/">camerond594</a></span> <span style="color: #80ebff; font-weight: 700">~</span> <span style="color: #7e8e91; font-weight: 700">%</span> 
+						<span style="background-color: #107bcc"><a href="/">camerond594</a></span> <span style="color: #80ebff; font-weight: 700">~</span> <span style="color: #7e8e91; font-weight: 700">%</span>
 						<span class="cursor">&nbsp;</span>
 					</p>
 				</div>
@@ -157,23 +157,25 @@
 					<p class="prompt">
 						<span style="background-color: #107bcc"><a href="/">camerond594</a></span> <span style="color: #80ebff; font-weight: 700">~/links</span> <span style="color: #7e8e91; font-weight: 700">%</span> tree<br/>
 					</p>
- 
+
 					<code class="tree">
 						<span style="color: #17A4D6;font-weight: 700">.</span><br/>
 						├── <span style="color: #17A4D6;font-weight: 700">things-i-did</span><br/>
 						│&nbsp;&nbsp;&nbsp;├── <span style="color: #17A4D6;font-weight: 700">my-websites</span><br/>
-						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="http://camerond594.github.io">personal</a><br/>
-						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="http://www.uvicfa.ca">uvicfa</a><br/>
+						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="http://camerond594.github.io" target="_blank">personal</a><br/>
+						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="http://www.uvicfa.ca" target="_blank">uvicfa</a><br/>
 						│&nbsp;&nbsp;&nbsp;├── <span style="color: #17A4D6;font-weight: 700">my-projects</span><br/>
-						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="https://github.com/camerond594/dungeons-and-dragons">dungeons-and-dragons</a><br/>
-						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="https://github.com/camerond594/electron-stocks">electron-stocks</a><br/>
-						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="https://github.com/camerond594/react-tictactoe">react-tictactoe</a><br/>
-						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="https://github.com/camerond594?tab=repositories">other</a><br/>
+						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="https://www.uvicfa.ca" target="_blank">uvic-faculty-association</a><br/>
+						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="https://github.com/camerond594/app_academy_fullstack" target="_blank">app-academy-fullstack</a><br/>
+						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="https://github.com/camerond594/dungeons-and-dragons" target="_blank">dungeons-and-dragons</a><br/>
+						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="https://github.com/camerond594/electron-stocks" target="_blank">electron-stocks</a><br/>
+						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="https://github.com/camerond594/react-tictactoe" target="_blank">react-tictactoe</a><br/>
+						│&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;├── <a href="https://github.com/camerond594?tab=repositories" target="_blank">other</a><br/>
 						└── <span style="color: #17A4D6;font-weight: 700">where-to-find-me</span><br/>
-						│&nbsp;&nbsp;&nbsp;└── <a href="http://github.com/camerond594">github</a><br/>
-						│&nbsp;&nbsp;&nbsp;└── <a href="https://ca.linkedin.com/in/cameron-day-2076838a">linkedin</a><br/>
+						│&nbsp;&nbsp;&nbsp;└── <a href="http://github.com/camerond594" target="_blank">github</a><br/>
+						│&nbsp;&nbsp;&nbsp;└── <a href="https://ca.linkedin.com/in/cameron-day-2076838a" target="_blank">linkedin</a><br/>
 					</code>
- 
+
 					<p class="prompt">
 						<span style="background-color: #107bcc"><a href="/">camerond594</a></span> <span style="color: #80ebff; font-weight: 700">~/links</span> <span style="color: #7e8e91; font-weight: 700">%</span>
 						<span class="cursor">&nbsp;</span>
@@ -201,7 +203,7 @@
 					<span class="separator">|</span>
 					<span class="info">
 						victoria
-					</span>	
+					</span>
 				</p>
 			</div>
 		</div>
@@ -213,7 +215,7 @@
 
 							</div>
 							<div class="right">
-								
+
 							</div>
 						</div>
 
@@ -247,7 +249,7 @@
 								<p class="selfdescription">
 									future plans:
 								</p>
-								
+
 								<ul>
 									<li>allow for dms to create their own campaigns to track characters per campaign</li>
 									<li>dynamic initiative scheduler as per <a href="http://www.improved-initiative.com/">improved initiative</a></li>
@@ -275,7 +277,7 @@
 								</ul>
 
 								<p class="selfdescription">&nbsp;</p>
-								
+
 								<h4><a href="https://github.com/camerond594/react-tictactoe">react tictactoe game</a></h4>
 
 								<p class="selfdescription">
@@ -306,10 +308,10 @@
 					</div>
 						<div class="post-footer">
 							<div class="left">
-								
+
 							</div>
 							<div class="right">
-								
+
 							</div>
 						</div>
 				</div>
